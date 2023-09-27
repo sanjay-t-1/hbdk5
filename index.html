@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Chewy&family=Cinzel&family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+              <style>
+                body{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                     height: 100vh;
+                    background-color: #BEFFF7;        
+                    font-family: 'Great Vibes', cursive;         
+                }
+                .birthdaycard{
+                    position:relative;
+                    width:60vw;
+                    height:70vh;
+                    cursor:pointer;
+                    transform-style: preserve-3d;
+                    transform: perspective(2500px);
+                    transition: 1s;
+                }
+                .birthdaycard:hover{
+                    transform: perspective(2500px) rotate(0deg);
+                    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 0 10px 100px rgba(0,0,0,0.4);
+
+
+                }
+                .birthdaycard:hover .cardfront{
+                   
+                    transform: rotateY(-160deg);
+                }
+                .birthdaycard:hover .happy{
+                    visibility: hidden;
+                }
+                .birthdaycard:hover .img2{
+                    visibility: hidden;
+                }
+
+                .cardfront{
+                    position: relative;
+                    background-color: #F4E869;
+                    width:60vw;
+                    height:70vh;
+                    overflow: hidden;
+                    transform-origin: left;
+                    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2),30px 0 50px rgba(0,0,0,0.4);
+                    transition: 0.6s;
+                   
+                    
+                }
+                .happy{
+                    font-family: Tahoma,sans-serif;
+                    text-align: center;
+                    margin:30px;
+                    background-image: linear-gradient(120deg,#f6d365 0%,#fda085 100%);
+                    transition: 0.1s;
+                }
+                .ballons{
+                    position: absolute;
+                    
+                }
+                .inside{
+                    position: absolute;
+                    background-color: #F9DEC9;
+                    top:0;
+                    left:0;
+                    width:60vw;
+                    height:70vh;
+                    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+                    z-index: -1;
+                }
+              
+              .gh{
+                font-size:7vh ;
+                
+                position: absolute;
+                left: 31vw;
+                top:19vh;
+                color:#EDB7ED;
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+              }     
+              .gh2{
+                font-size:10vh ;
+                
+                position: absolute;
+                left: 34vw;
+                top:30vh;
+                color:#EDB7ED;
+                text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+              }  
+              .img2{
+                height:50vh;
+                position: absolute;
+                top:11vh;
+                left:6vw;
+                border: solid #FFF 4px;
+                box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+              }
+              .img2 img{
+                
+                width: 20vw;
+                height: 50vh;
+                
+              }      
+              .img3{
+                height:50vh;
+                position: absolute;
+                top:11vh;
+                left:6vw;
+                border: solid #FFF 4px;
+                box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+              }
+              .img3 img{
+                
+                width: 20vw;
+                height: 50vh;
+                
+              }     
+              .hgg{
+                font-size: 5vh ;
+                position:absolute;
+                left:30vw;
+                right:3vw;
+                text-align: center;
+                top:20vh;
+              }    
+              </style>
+    </head>
+    <body>
+        <div class="birthdaycard">
+            <div class="cardfront">
+                <h1 class="gh">Happy Birth Day</h1>
+                <h1 class="gh2">Bangaram</h1>
+                <div class="img2"><img src="1.jpeg"></div>
+            <div class="ballons">
+                <div class="b1">
+
+                </div>
+                <div class="b2">
+
+                </div>
+                <div class="b3">
+
+                </div>
+                <div class="b4">
+
+                </div>
+                
+
+            </div>
+            
+            
+            </div>
+           <div class="inside">
+               <div class="img3"><img src="2.jpeg"></div>
+                <p class="hgg">Hey, birthday girl. There isn’t a word in the dictionary to describe how beautiful you look today.<br>-sanjay</p>       
+           </div>
+          
+        </div>
+    </body>
+</html>
